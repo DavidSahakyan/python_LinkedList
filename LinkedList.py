@@ -1,4 +1,4 @@
-import Node
+from My_Node import Node
 
 class LinkedList:
     def __init__(self, *args):
@@ -84,4 +84,14 @@ class LinkedList:
     
     def length(self):
         return self._len
-        
+    
+    
+a = LinkedList()
+
+a.append(1)
+a.prepend(1)
+a.insert_after(1, 4)
+a.delete(4)
+a.append(1)
+
+a.display()
